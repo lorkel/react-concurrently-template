@@ -1,0 +1,31 @@
+{
+  "name": "eams-display-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm start",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lorkel@github.com/lorkel/eams-display-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "NONE",
+  "bugs": {
+    "url": "https://github.com/lorkel/eams-display-node/issues"
+  },
+  "homepage": "https://github.com/lorkel/eams-display-node#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "password-generator": "^2.3.2"
+  }
+}
